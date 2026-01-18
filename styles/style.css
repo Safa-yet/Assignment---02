@@ -63,6 +63,11 @@ Common Style
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
+.info-text{
+margin-top: 16px;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.507);
+}
 
 .navbar {
   display: flex;
@@ -145,3 +150,35 @@ background: url(/assets/hero-circle.png);
  
 }
 
+
+/* About Section */
+.about-text{
+    text-align:center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 800;
+
+}
+
+
+
+
+.rating-box{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.rating-item{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.rating-item h2{
+    font-size: 3rem;
+    color: var(--secondary-color);
+}

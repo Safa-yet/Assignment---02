@@ -1,0 +1,147 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1a0b2e;
+  color: white;
+}
+
+
+:root{
+    --primary-color:#1A0B2E;
+    --secondary-color:#00FF88;
+    --xl-border-radius :100px;
+}
+
+/* ==============
+Common Style
+================ */
+
+.container {
+  width: 75%;
+  max-width: 1200px;
+  margin: 120px auto;
+}
+
+.primary-btn {
+  padding: 12px 16px;
+  background: linear-gradient(
+    20deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: var(--xl-border-radius);
+  color: white;
+  cursor: pointer;
+}
+.sec-btn {
+  padding: 12px 16px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--xl-border-radius);
+  color: var(--secondary-color);
+  cursor: pointer;
+  margin-left: 8px;
+  transition: all .3s ease-in-out;
+}
+
+.sec-btn:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px auto;
+}
+.logo span {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  -webkit-background-clip: text;
+
+  color: transparent;
+}
+.menu-bar {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+.toggle-btn {
+  display: none;
+}
+
+
+
+/* hero Section  */
+
+.hero-section{
+background-position: center ;
+background-image: url(/assets/hero-bg.png);
+background-size: cover;
+
+
+}
+.hero-item{
+margin:0 auto;
+padding: 101px 0;
+text-align: center;
+}
+
+.music-img{
+    width: 350px;
+    height: 350px;
+background: url(/assets/hero-circle.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+
+
+}
+.new-btn{
+    position: absolute;
+    top: 12px;
+    right: 5%;
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--xl-border-radius);
+    box-shadow: 1px 1px 20px 10px #00ff8841;
+    
+}
+
+.hero-title{
+    font-size: 3.75rem;
+    font-size: 900;
+}
+
+.hero-btn-box{
+    margin-top: 24px;
+ 
+}
+

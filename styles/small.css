@@ -1,0 +1,42 @@
+@media screen and (max-width:576px) {
+    .toggle-btn{
+display: block;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .navbar> button{
+        display: none;
+    }
+
+    .hero-title{
+        font-size: 40px;
+    }
+    .hero-item{
+        max-width: 400px;
+    }
+
+    
+.container {
+  width: 90%;
+  max-width: 400px;
+}
+
+
+
+/* grid box */
+.rating-box{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.choice-grid{
+    grid-template-columns: repeat(1,1fr);
+}
+.choice-grid .col-span{
+  grid-column:auto;
+}
+.choice-grid .row-span{
+  grid-row: auto;
+}
+
+}

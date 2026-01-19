@@ -97,6 +97,7 @@ Header Section
 }
 .toggle-btn {
   display: none;
+  font-size: larger;
 }
 
 /* hero Section  */
@@ -105,6 +106,8 @@ Header Section
   background-position: center;
   background-image: url(../assets/hero-bg.png);
   background-size: cover;
+  border-top: 2px solid rgba(63, 61, 61, 0.233);
+
 }
 .hero-item {
   margin: 0 auto;
@@ -156,6 +159,7 @@ Header Section
 .section-title {
   font-size: 3rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .rating-box {
@@ -171,4 +175,45 @@ Header Section
 .rating-item h2 {
   font-size: 3rem;
   color: var(--secondary-color);
+}
+
+
+
+/* Choice Section */
+
+.choice-section{
+  background-color: #230E3D;
+  padding: 120px 0;
+
+}
+.choice-container{
+  margin: 0 auto;
+}
+.choice-grid{
+  margin-top: 40px;
+ display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  
+  
+}
+
+.choice-item{
+  padding: 40px;
+  background-color: #3511659d;
+  border-radius: 40px;
+  /* align-items: center; */
+  align-content: center;
+
+ 
+}
+.choice-item img{
+  margin: 16px 0;
+}
+
+.choice-grid .col-span{
+  grid-column: span 2;
+}
+.choice-grid .row-span{
+  grid-row: span 2;
 }

@@ -18,14 +18,6 @@ body {
   --primary-color: #1a0b2e;
   --secondary-color: #00ff88;
   --xl-border-radius: 100px;
- 
-  --gradiant-background-color:
-  linear-gradient(
-    20deg,
-    rgba(247, 233, 63, 1) 0%,
-    rgba(251, 9, 180, 1) 50%,
-    rgba(145, 0, 248, 1) 100%
-  );
 }
 
 /* ==============
@@ -72,7 +64,7 @@ Common Style
 }
 .info-text {
   margin: 16px 0;
-  line-height: 2;
+  line-height: 1.9;
   color: rgba(255, 255, 255, 0.507);
 }
 
@@ -80,12 +72,12 @@ Common Style
 Header Section
 ============== */
 
-/* Navbar */
+/*==== Navbar =====*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 16px auto;
+  margin: 16px auto !important;
 }
 .span-color {
   background: linear-gradient(
@@ -95,7 +87,6 @@ Header Section
     rgba(145, 0, 248, 1) 100%
   );
   -webkit-background-clip: text;
-
   color: transparent;
 }
 .menu-bar {
@@ -108,14 +99,13 @@ Header Section
   font-size: larger;
 }
 
-/* hero Section  */
+/*====== hero Section ======  */
 
 .hero-section {
   background-position: center;
   background-image: url(../assets/hero-bg.png);
   background-size: cover;
   border-top: 2px solid rgba(63, 61, 61, 0.233);
-
 }
 .hero-item {
   margin: 0 auto;
@@ -133,7 +123,9 @@ Header Section
   margin: auto;
   margin-bottom: 40px;
   position: relative;
+  z-index: 10;
 }
+
 .new-btn {
   position: absolute;
   top: 12px;
@@ -157,7 +149,7 @@ Header Section
   margin-top: 24px;
 }
 
-/* About Section */
+/*========== About Section =========*/
 .about-text {
   text-align: center;
   padding-bottom: 40px;
@@ -186,117 +178,118 @@ Header Section
   color: var(--secondary-color);
 }
 
+/*=========== Choice Section =========*/
 
-
-/* Choice Section */
-
-.choice-section{
-  background-color: #230E3D;
+.choice-section {
+  background-color: #230e3d;
   padding: 120px 0;
-
 }
-.choice-container{
+.choice-container {
   margin: 0 auto;
 }
-.choice-grid{
+.choice-grid {
   margin-top: 40px;
- display: grid;
-  grid-template-columns: repeat(3,1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  
-  
 }
 
-.choice-item{
+.choice-item {
   padding: 40px;
   background-color: #3511659d;
   border-radius: 40px;
-  /* align-items: center; */
   align-content: center;
-
- 
 }
-.choice-item img{
+.choice-item img {
   margin: 16px 0;
 }
 
-.choice-grid .col-span{
+.col-span {
   grid-column: span 2;
 }
-.choice-grid .row-span{
+.row-span {
   grid-row: span 2;
 }
 
-
-/* episods-grid */
-.episods-grid{
+/* Episods-grid */
+.episods-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.episods{
-border-radius:30px;
-background-color:#3511659d ;
+.episods {
+  border-radius: 30px;
+  background-color: #3511659d;
 
-overflow: hidden;
+  overflow: hidden;
 }
-.episods iframe{
+.episods iframe {
   width: 100%;
 }
-.episods-info{
-
+.episods-info {
   padding: 24px;
 }
-.duration{
+.duration {
   color: #00ff88;
   font-weight: 600;
   margin-top: 14px;
 }
 
-.host-section{
+/* ========== Host Section ========== */
+.host-section {
   margin-top: 40px;
   padding: 40px;
   border-radius: 40px;
   background-color: #3511659d;
   display: flex;
- gap: 24px;
+  gap: 24px;
   align-items: center;
 }
-.icon-cont{
+.icon-cont {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.icon{
+.icon {
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border: 2px solid #533C72;
+  border: 2px solid #533c72;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-
-footer{
-  padding: 120px 0;
+/* Footer Section */
+footer {
+  padding: 120px;
   background: url(../assets/footer-bg.png);
+  background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-container{
-  text-align: center;
 
+.footer-title {
+  font-size: 4rem;
+  font-size: 900;
+}
+.footer-container {
+  text-align: center;
 }
 
-.brand-sec{
-  margin: 32px 0;
+.brand-sec {
+  margin: 32px auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
+}
+.brand-sec p:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
 }

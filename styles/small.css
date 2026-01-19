@@ -9,6 +9,17 @@ display: block;
         display: none;
     }
 
+    .music-img {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+    .new-btn{
+         right: -10%;
+    }
+    .absolute{
+        width: 50%;
+    }
     .hero-title{
         font-size: 40px;
     }
@@ -38,5 +49,16 @@ display: block;
 .choice-grid .row-span{
   grid-row: auto;
 }
+
+.host-section,.brand-sec{
+    flex-direction: column;
+  text-align: center;
+  
+}
+
+/* .brand-sec{
+    flex-wrap: wrap;
+
+} */
 
 }

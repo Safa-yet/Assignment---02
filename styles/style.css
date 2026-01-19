@@ -18,6 +18,14 @@ body {
   --primary-color: #1a0b2e;
   --secondary-color: #00ff88;
   --xl-border-radius: 100px;
+ 
+  --gradiant-background-color:
+  linear-gradient(
+    20deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
 }
 
 /* ==============
@@ -63,7 +71,7 @@ Common Style
   background-color: var(--secondary-color);
 }
 .info-text {
-  margin-top: 16px;
+  margin: 16px 0;
   line-height: 2;
   color: rgba(255, 255, 255, 0.507);
 }
@@ -79,9 +87,9 @@ Header Section
   align-items: center;
   margin: 16px auto;
 }
-.logo span {
+.span-color {
   background: linear-gradient(
-    90deg,
+    70deg,
     rgba(247, 233, 63, 1) 0%,
     rgba(251, 9, 180, 1) 50%,
     rgba(145, 0, 248, 1) 100%
@@ -133,7 +141,7 @@ Header Section
   padding: 8px 16px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 600;
   border: none;
   border-radius: var(--xl-border-radius);
@@ -244,4 +252,51 @@ overflow: hidden;
 .duration{
   color: #00ff88;
   font-weight: 600;
+  margin-top: 14px;
+}
+
+.host-section{
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 40px;
+  background-color: #3511659d;
+  display: flex;
+ gap: 24px;
+  align-items: center;
+}
+.icon-cont{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #533C72;
+  border-radius: 50%;
+}
+
+
+footer{
+  padding: 120px 0;
+  background: url(../assets/footer-bg.png);
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container{
+  text-align: center;
+
+}
+
+.brand-sec{
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }

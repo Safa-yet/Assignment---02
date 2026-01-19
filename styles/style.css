@@ -166,6 +166,7 @@ Header Section
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 .rating-item {
   text-align: center;
@@ -216,4 +217,31 @@ Header Section
 }
 .choice-grid .row-span{
   grid-row: span 2;
+}
+
+
+/* episods-grid */
+.episods-grid{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.episods{
+border-radius:30px;
+background-color:#3511659d ;
+
+overflow: hidden;
+}
+.episods iframe{
+  width: 100%;
+}
+.episods-info{
+
+  padding: 24px;
+}
+.duration{
+  color: #00ff88;
+  font-weight: 600;
 }

@@ -24,6 +24,13 @@
   .hero-item {
     max-width: 400px;
   }
+.animate{
+  top: 10%;
+
+}
+.animate>img{
+  width: 70%;
+}
 
   .choice-section {
     padding: 40px 0;

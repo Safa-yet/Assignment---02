@@ -149,6 +149,22 @@ Header Section
   margin-top: 24px;
 }
 
+.animate{
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  opacity: .7;
+  animation: translate 4s ease-in-out  infinite alternate;
+}
+@keyframes translate {
+
+  from{
+    transform: translateX(50px) translateY(10px);
+  }
+
+  
+}
+
 /*========== About Section =========*/
 .about-text {
   text-align: center;
@@ -222,7 +238,6 @@ Header Section
 .episods {
   border-radius: 30px;
   background-color: #3511659d;
-
   overflow: hidden;
 }
 .episods iframe {
